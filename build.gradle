@@ -1,0 +1,37 @@
+apply plugin: 'groovy'
+
+sourceCompatibility = '1.8'
+
+sourceSets {
+    jobs {
+        groovy {
+            srcDirs 'jobs'
+            compileClasspath = compileGroovy.classpath
+        }
+    }
+
+    examples {
+        groovy {
+            srcDirs 'examples'
+            compileClasspath = compileGroovy.classpath
+        }
+    }
+}
+
+repositories {
+    mavenLocal()
+    jcenter()
+    mavenCentral()
+    maven { url 'http://repo.jenkins-ci.org/releases/' }
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.7'
+    compile 'org.jenkins-ci.plugins:job-dsl-core:1.48'
+
+    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+    testCompile 'cglib:cglib-nodep:3.1'
+    testCompile 'org.objenesis:objenesis:2.1'
+
+    jobsCompile sourceSets.main.output
+}
