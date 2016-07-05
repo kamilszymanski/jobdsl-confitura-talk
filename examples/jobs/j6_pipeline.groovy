@@ -1,3 +1,8 @@
+/**
+ * To run this example you have to change git repository url to your repository containing
+ * gradle project that defines build, publish and acceptanceTests tasks
+ */
+
 job('01-build') {
     scm {
         git 'file:///home/kamils/confitura/projects/hello-confitura'

@@ -1,3 +1,8 @@
+/**
+ * To run this example you have to change `repository` to your git repository containing
+ * gradle project that defines build, publish and acceptanceTests tasks
+ */
+
 import pl.confitura.jobdsl.pipeline.customizable.CustomizableDeliveryPipeline
 import pl.confitura.jobdsl.pipeline.customizable.step.*
 

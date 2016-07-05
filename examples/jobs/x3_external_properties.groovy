@@ -1,3 +1,14 @@
+/**
+ * To run this example you have to change `repositoryBasePath` to a directory containing git projects
+ * that have metadata.json file in their root directories.
+ *
+ * metadata.json files should define `great` and `trigger` properties, e.g.:
+ *  {
+ *    "greet": "Confitura",
+ *    "trigger": "0 9 2 7 0"
+ *  }
+ */
+
 String repositoryBasePath = '/home/kamils/confitura/projects'
 
 def parseMetadata(File project) {
