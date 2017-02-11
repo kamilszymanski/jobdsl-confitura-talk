@@ -7,3 +7,5 @@ To run the examples you have to install following Jenkins plugins:
 - [delivery-pipeline-plugin](https://wiki.jenkins-ci.org/display/JENKINS/Delivery+Pipeline+Plugin)
 - [gradle](https://wiki.jenkins-ci.org/display/JENKINS/Gradle+Plugin)
 - [build-pipeline-plugin](https://wiki.jenkins-ci.org/display/JENKINS/Build+Pipeline+Plugin)
+
+You can install plugins either manually or by simply running `scripts/install_plugins.groovy` script in Jenkins Script Console.
